@@ -6,13 +6,15 @@ on:
      - main
   
 jobs:
-  run-python-code:
+   run-python-code:
     runs-on: ubuntu-latest
 
     steps:
       - name: checkout code
         uses: actions/checkout@v7
 
+      - name: install required library
+        run: pip install pandas  
 
       - name: run python  
         run: python data.py
