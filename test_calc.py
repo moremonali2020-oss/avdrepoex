@@ -6,11 +6,11 @@ def test_add():
 
 
 def test_sub():
-    assert add(20, 10) == 10
+    assert sub(20, 10) == 10
 
 
 def test_mul():
-    assert add(10, 20) == 200
+    assert mul(10, 20) == 200
 
 
 def test_div():
